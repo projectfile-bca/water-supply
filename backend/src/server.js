@@ -12,7 +12,10 @@ import dns from "dns";
 // Force Google DNS (fixes SRV issue)
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 dotenv.config();
-
+app.use(cors({
+  origin: process.env.CLIENT_URL,
+  credentials: true
+}));
 const app = express();
 const port = process.env.PORT || 5000;
 app.get("/", (req, res) => {
