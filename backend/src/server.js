@@ -15,7 +15,9 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
-
+app.get("/", (req, res) => {
+  res.send("🚀 Water Supply API is running...");
+});
 app.use(
   cors({
     origin: process.env.CLIENT_URL || "http://localhost:5173",
