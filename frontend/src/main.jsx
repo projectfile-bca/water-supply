@@ -90,7 +90,7 @@ function App() {
           </span>
           <div className="panel-heading">
             <p>Water delivery platform</p>
-            <h1>Fresh water orders, driver approvals, and delivery tracking.</h1>
+            <h1>Fresh water</h1>
           </div>
         </div>
 
